@@ -94,8 +94,7 @@ Then we can use drone-cli to manage drone.
 
 ### Skip CI
 
-If commit new changed, but doesn't trigger ci, for example, only modify document.
-We can skip ci by adding [CI SKIP], [ci skip] to commit message.
+If a new change is intended to commit that don't trigger ci, for example, only modify the document. We can skip ci by adding [CI SKIP], [ci skip] to commit the message.
 
 ## More
 
