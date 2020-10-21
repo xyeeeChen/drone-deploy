@@ -18,7 +18,7 @@ Before running drone, we must set environment.
 | DRONE_GITLAB_SERVER        | The url of gitlab            |
 | DRONE_GITLAB_CLIENT_ID     | The application id of gitlab |
 | DRONE_GITLAB_CLIENT_SECRET | The secret of gitlab         |
-| DRONE_RPC_SECRET               | This is used to authenticate the rpc connection between the server and runners. The server and runner must be provided the same secret value.         |
+| DRONE_RPC_SECRET           | This is used to authenticate the rpc connection between the server and runners. The server and runner must be provided the same secret value.         |
 
 Get gitlab application id and secret
 
@@ -27,7 +27,8 @@ Get gitlab application id and secret
 ![gitlab-application-id](./picture/gitlab-application-id.png)
 
 Input `Name` and `http://drone-server-host/login`.
-Then mark `api` scopes, final save application
+ 
+Mark `api` scopes and save application.
 
 We can get application id and secret in here.
 
@@ -67,10 +68,10 @@ docker-compose up -d
 
 ## Login
 
-Using browser to `your-drone-domain`, auto redirect authorize page. Then accept authorization and switch on your project.
+Use browser to browse `your-drone-domain`, auto redirect authorize page. Then accept authorization and switch on your project.
 
 > Note:
-> If using self signed cert, disable SSL verification in gitlab
+> If using self signed cert, we disable SSL verification in gitlab
 >
 > Enter `Your Project` -> `Settings` -> `Integrations`
 > Edit Webphook to disable SSL verification.
